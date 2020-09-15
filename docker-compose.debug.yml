@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  apache_php:
+    image: apache_php
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000

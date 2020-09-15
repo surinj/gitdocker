@@ -1,0 +1,20 @@
+# version: '3.4'
+
+# services:
+#   apache_php:
+#     image: apache_php
+#     build: .
+#     ports:
+#       - 3000
+
+
+ web_server:
+    build: web/
+    tty: true
+    ports: 
+      - 8000:80
+    container_name: web_server
+    volumes: 
+      - ../:/var/www/html
+    links:
+      - mysql_server:mysql
