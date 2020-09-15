@@ -1,3 +1,3 @@
 FROM eboraas/apache-php
 
-# EXPOSE 80
+EXPOSE 80
