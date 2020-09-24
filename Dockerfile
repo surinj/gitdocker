@@ -1,3 +1,3 @@
 FROM eboraas/apache-php
 
-EXPOSE 888
+EXPOSE 81
